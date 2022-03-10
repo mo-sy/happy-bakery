@@ -248,9 +248,13 @@ input {
   padding: 68px;
 }
 
+.product-intro {
+  margin-bottom: 60px;
+}
+
 .product-desc {
   font-weight: 400;
-  margin: 0 auto 48px;
+  margin: 0 auto 38px;
 }
 
 .product-list {
@@ -271,7 +275,6 @@ input {
 }
 
 .product-buttons button {
-  /* border: 1px solid rgb(200, 200, 200); */
   margin-right: 20px;
   padding: 3px 10px;
   border-radius: 4px;
@@ -452,21 +455,8 @@ footer {
     padding-top: 80px;
   }
 
-  /* Product */
-  .prod-items .col-md-4 {
-    width: 50%;
-  }
-
   /* Footer */
-
   .open-hour {
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  /* Product */
-  .prod-items .col-md-4 {
-    width: 33.33333%;
   }
 }

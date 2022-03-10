@@ -1,4 +1,4 @@
- const backToTop = document.getElementById('backtotop');
+const backToTopBtn = document.getElementById("backtotop");
 
 function checkScroll() {
   /*
@@ -7,21 +7,21 @@ function checkScroll() {
     pageYOffset이란 변수에는 스크롤 y축의 값이 들어간다
     0이면 스크롤이 안된 상태 (최상단) 
   */
-    let pageYOffset = window.pageYOffset;
+  let pageYOffset = window.pageYOffset;
 
-    if(pageYOffset !== 0) {
-      backToTop.classList.add('show');
-    } else {
-      backToTop.classList.remove('show');
-    }
+  if (pageYOffset !== 0) {
+    backToTopBtn.classList.add("show");
+  } else {
+    backToTopBtn.classList.remove("show");
+  }
 }
 
 function moveBackToTop() {
-  if(window.pageYOffset > 0) {
-    window.scrollTo({top:0, behavior: "smooth"})
+  if (window.pageYOffset > 0) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 }
 
 // 스크롤할때마다 checkScroll함수를 호출해라
-window.addEventListener('scroll', checkScroll);
-backToTop.addEventListener('click', moveBackToTop);
+window.addEventListener("scroll", checkScroll);
+backToTopBtn.addEventListener("click", moveBackToTop);
